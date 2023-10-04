@@ -1,0 +1,86 @@
+<!Doctype html>
+<html lang="en">
+  <head>      
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baguette+Script&display=swap">
+    <link rel="icon" href="dach.jpg" type="image/jpg">
+  <style>
+      // Functions first
+@import "../node_modules/bootstrap/scss/functions";
+
+// Variable overrides second
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Required Bootstrap imporats
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// Optional components
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+  .form {
+    position: relative;
+    z-index: 1;
+    background: #2b2e38;
+    max-width: 400px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .form input {
+    font-family: "Poppins";
+    outline: 0;
+    width: 100%;
+    border: 0;
+    border-radius: 7px;
+    box-sizing: border-box;
+   }
+ 
+  </style>
+  </head>
+  <body style="font-family: 'Poppins', sans-serif; background-color: #352F44; align-items:center; justify-content:center;">
+   <img src="1.jpg" alt="" class="rounded-circle" style="width: 100px; height: 100px; margin-left: 60%; margin-top: 30%; margin-bottom: 0;"></>
+  <div class="container" style="width: 80%; height: 250px; margin-top: 0%; background-color: #5C5470; border-radius: 10px;"> 
+          
+  <div class="form">
+   <form class="login-form" method="post">
+   <h1 style="font-family: 'Baguet Script', cursive; font-weight: bold; color: #B9B4C7; margin-top: 25px; margin-left: 10px; padding-top: 13px;"><i class="fas fa-lock" style="margin-right: 10px;"></i> Angel</h1>
+   <input style="margin-top: 7px; font-size: 15px; background-color: #352F44; color: #B9B4C7; padding-left: 10px; height: 45px; font-weight: bold;" type="text" id="email" name="email" placeholder="Utilisatrice" required />
+   <input style="margin-top: 10px; font-size: 15px; background-color: #352F44; color: #B9B4C7; padding-left: 10px; height: 45px; font-weight: bold;" type="password" id="password" name="password" placeholder="Mot de passe" required/>
+   <button style="margin-top: 15px; background: #B9B4C7; color: #352F44; width: 100%; border: 0; border-radius: 7px; padding: 3px; font-size: 17px; font-weight: bold; height: 45px;" type="button" onclick="checkLogin()">Se connecter</button>    
+    </for>
+    </div>
+  <script>
+    function checkLogin() {
+      var username = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      if (username === "MrsGeorges" && password === "Johann05") {
+        window.location.href = "birth.html";
+      } else {
+        alert("Rassurez-vous que votre nom d'utilisateur ainsi que votre mot de passe soient corrects Mme Georges !");
+      }
+    }
+  </script>
+       
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>  
+   
+  </body>
+</html>
